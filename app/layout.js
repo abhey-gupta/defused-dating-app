@@ -11,7 +11,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${inter.className} bg-cover bg-center bg-no-repeat min-h-screen`}
+        style={{
+          // backgroundImage: `url(https://img.freepik.com/free-vector/abstract-soft-colorful-watercolor-texture-background-design-vector_1055-12127.jpg)`,
+          backgroundImage: `url(https://png.pngtree.com/background/20210714/original/pngtree-beautiful-elegant-pink-red-purple-watercolor-smudge-background-picture-image_1220864.jpg)`,
+        }}
+      >
+        {children}
+      </body>
     </html>
   );
 }

@@ -29,7 +29,7 @@ Amita Das,30,Female,Singing,Yoga,ENFJ,Maharashtra
 const Home = () => {
   const router = useRouter();
   const openai = new OpenAI({
-    apiKey: "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",
+    apiKey: "api-key",
     dangerouslyAllowBrowser: true,
   });
   const [searchTerm, setSearchTerm] = useState("");
